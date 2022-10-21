@@ -1,0 +1,11 @@
+* Selection and Marks in Emacs
+
+** Set a mark
+
+- =C-SPC= :: sets the mark
+  - =C-@= :: does the same as above
+  - =C-SPC= :: deactivate the mark
+
+- =C-x C-x= :: (exchange-point-and-mark)
+
+
