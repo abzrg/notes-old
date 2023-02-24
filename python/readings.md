@@ -1,0 +1,1 @@
+- [https://ventsislav94.medium.com/](https://ventsislav94.medium.com/)

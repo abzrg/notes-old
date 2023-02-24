@@ -1,0 +1,1 @@
+- For getting the meaning of MPI errors: `man OpenMPI`

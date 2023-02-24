@@ -3,6 +3,11 @@
 ```
 git rm --cached <file> <file>
 git rm -r --cached .
+
+
+# This actually worked for me
+git restore --staged file
+
 ```
 
 
