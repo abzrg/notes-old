@@ -1,0 +1,64 @@
+  1           0 LOAD_CONST               0 (<code object f at 0x1048526b0, file "t.py", line 1>)
+              2 LOAD_CONST               1 ('f')
+              4 MAKE_FUNCTION            0
+              6 STORE_NAME               0 (f)
+
+  5           8 LOAD_NAME                1 (__name__)
+             10 LOAD_CONST               2 ('__main__')
+             12 COMPARE_OP               2 (==)
+             14 POP_JUMP_IF_FALSE       13 (to 26)
+
+  6          16 LOAD_NAME                0 (f)
+             18 CALL_FUNCTION            0
+             20 POP_TOP
+             22 LOAD_CONST               3 (None)
+             24 RETURN_VALUE
+
+  5     >>   26 LOAD_CONST               3 (None)
+             28 RETURN_VALUE
+
+Disassembly of <code object f at 0x1048526b0, file "t.py", line 1>:
+  2           0 LOAD_CONST               1 ('world')
+              2 STORE_FAST               0 (thing)
+
+  3           4 LOAD_GLOBAL              0 (print)
+              6 LOAD_CONST               2 ('hello hello ')
+              8 LOAD_FAST                0 (thing)
+             10 BINARY_ADD
+             12 CALL_FUNCTION            1
+             14 POP_TOP
+             16 LOAD_CONST               0 (None)
+             18 RETURN_VALUE
+
+------------------
+
+Optimized
+----------
+
+
+  1           0 LOAD_CONST               0 (<code object f at 0x102f526b0, file "t.py", line 1>)
+              2 LOAD_CONST               1 ('f')
+              4 MAKE_FUNCTION            0
+              6 STORE_NAME               0 (f)
+
+  5           8 LOAD_NAME                1 (__name__)
+             10 LOAD_CONST               2 ('__main__')
+             12 COMPARE_OP               2 (==)
+             14 POP_JUMP_IF_FALSE       13 (to 26)
+
+  6          16 LOAD_NAME                0 (f)
+             18 CALL_FUNCTION            0
+             20 POP_TOP
+             22 LOAD_CONST               3 (None)
+             24 RETURN_VALUE
+
+  5     >>   26 LOAD_CONST               3 (None)
+             28 RETURN_VALUE
+
+Disassembly of <code object f at 0x102f526b0, file "t.py", line 1>:
+  3           0 LOAD_GLOBAL              0 (print)
+              2 LOAD_CONST               1 ('hello hello world')
+              4 CALL_FUNCTION            1
+              6 POP_TOP
+              8 LOAD_CONST               0 (None)
+             10 RETURN_VALUE
