@@ -9,8 +9,7 @@ to _iterate over a sequence of values_, such as the items in a list or the
 characters in a string.
 
 The `__iter__()` method returns the _iterator object itself_, while
-the `__next__()` method returns _the next value in the sequence_ or _raises the
-`StopIteration` exception_ if there are no more values.
+the `__next__()` method returns _the next value in the sequence_ or _raises_ the `StopIteration` exception if there are no more values.
 
 Here's an example of using an iterator to iterate over the items in a list:
 

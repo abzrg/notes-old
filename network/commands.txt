@@ -1,0 +1,2 @@
+ping	send ICMP ECHO_REQUEST packets to network hosts
+nslookup	query Internet name servers interactively

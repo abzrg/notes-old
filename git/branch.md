@@ -78,19 +78,19 @@ git switch <other-branch>
 <!--{{{-->
 - Renaming the current HEAD branch
 
-```
+```sh
 git branch -m <new-name>
 ```
 
 - Renaming any local branch
 
-```
+```sh
 git branch -m <old-name> <new-name>
 ```
 
 - "Renaming" a remote branch
 
-```
+```sh
 # First, delete the current / old branch
 git push origin --delete <old-name>
 
